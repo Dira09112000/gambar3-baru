@@ -1,0 +1,38 @@
+.container-all {
+  width: 1150px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+}
+.card1{
+    width: 280px;
+    height: 150px;
+    background:#29263C;
+    border-radius: 20px;
+}
+
+.card2{
+    width: 30px;
+    height: 20px;
+    border-radius:5px;
+    background-color: #3D3A4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+}
+.card2:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
