@@ -1,10 +1,12 @@
 import "../css/Body.css";
+import Grafik from "./Grafik";
 import { RiMessengerLine } from "react-icons/ri";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { MdExpandMore } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
 import { FiMoreHorizontal } from "react-icons/fi";
+import MarketCap from "./MarketCap";
 const Body = () => {
   return (
     <>
@@ -63,10 +65,57 @@ const Body = () => {
               paddingTop: "20px",
             }}
           >
-            <div className="card1"></div>
-            <div className="card1"></div>
-            <div className="card1"></div>
-            <div className="card1"></div>
+            {/* Bitcoin */}
+            <div className="card1" style={{ display: "flex" }}>
+              <div className="bitcoin">
+                <text>Bitcoin</text>
+                <div className="text-dolar">
+                  <text>$1.453</text>
+                </div>
+              </div>
+              <div>
+                <Grafik />
+              </div>
+            </div>
+
+            {/* Ethereum */}
+            <div className="card1" style={{ display: "flex" }}>
+              <div className="bitcoin">
+                <text>Ethereum</text>
+                <div className="text-dolar">
+                  <text>$1.700</text>
+                </div>
+              </div>
+              <div>
+                <Grafik />
+              </div>
+            </div>
+
+            {/* Ripple */}
+            <div className="card1" style={{ display: "flex" }}>
+              <div className="bitcoin">
+                <text>Ripple</text>
+                <div className="text-dolar">
+                  <text>$0.586</text>
+                </div>
+              </div>
+              <div>
+                <Grafik />
+              </div>
+            </div>
+
+            {/* Devcoin */}
+            <div className="card1" style={{ display: "flex" }}>
+              <div className="bitcoin">
+                <text>Devcoin</text>
+                <div className="text-dolar">
+                  <text>$0.021</text>
+                </div>
+              </div>
+              <div>
+                <Grafik />
+              </div>
+            </div>
           </div>
 
           <div style={{ display: "flex" }}>
@@ -95,7 +144,7 @@ const Body = () => {
                   padding: "20px",
                   background: "#29263C",
                   width: "730px",
-                  height: "50vh",
+                  height: "435px",
                   borderRadius: "20px",
                 }}
               >
@@ -142,6 +191,9 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
+                <div style={{ padding: "20px" }}>
+                  
+                </div>
               </div>
             </div>
             {/* sesi2 */}
@@ -161,12 +213,49 @@ const Body = () => {
               <div style={{ paddingTop: "20px" }}>
                 <div
                   style={{
+                    display: "flex",
                     background: "#29263C",
                     width: "100%",
-                    height: "200px",
+                    height: "230px",
                     borderRadius: "20px",
                   }}
-                ></div>
+                >
+                  <div style={{ paddingLeft: "15px" }}>
+                    <div className="sell">
+                      <text>Sell</text>
+                    </div>
+                    <div className="dolar-usd">
+                      <text>47.660</text>
+                      <text style={{ paddingLeft: "70px" }}>USD</text>
+                    </div>
+
+                    <div className="sell">Buy</div>
+                    <div className="dolar-usd">
+                      <text>1.0</text>
+                      <text style={{ paddingLeft: "105px" }}>BTC</text>
+                    </div>
+
+                    <div style={{ paddingLeft: "13px", paddingTop: "18px" }}>
+                      <button className="button-exchange">
+                        <text className="text-exchange">Exchange</text>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div style={{ paddingTop: "17px", paddingLeft: "10px" }}>
+                    <div className="card-hijau">
+                      <div className="text-balance">
+                        <text>Balance</text>
+                      </div>
+                      <div className="exchange-dolar">
+                        <text>$14.538,00</text>
+                      </div>
+                      <div className="text-bawah">
+                        <text>12/24</text>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div
                 style={{
@@ -181,15 +270,9 @@ const Body = () => {
                   <FiMoreHorizontal />
                 </div>
               </div>
-              <div style={{ paddingTop: "20px" }}>
-                <div
-                  style={{
-                    background: "#29263C",
-                    width: "100%",
-                    height: "140px",
-                    borderRadius: "20px",
-                  }}
-                ></div>
+              <div style={{paddingTop:"20px"}}></div>
+              <div>
+                <MarketCap />
               </div>
             </div>
           </div>

@@ -1,0 +1,74 @@
+/* @font-face {
+    font-family: "formula";
+    src: url(../font/formula.ttf);
+  } */
+.container-head{
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-body{
+    width: 800px;
+    height: 600;
+    font-weight: bold;
+}
+.container-duit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+}
+
+.kotak-persen{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    background: #FFEAF7;
+    border-radius: 15px;
+    margin-left: 30px;
+    color: #db6f93bb;
+}
+.container-sub-head{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    font-size: 12px;
+}
+.container-body{
+    padding: 20;
+}
+
+.kotak-sub-head-1:hover{
+    border-bottom: solid;
+    border-color: #9091DD;
+    color: #9091DD;
+    padding-bottom: 5px;
+}
+
+.kotak-sub-head-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    border: 1px;
+    border-color: #f2f2fd;
+    border-style: solid;
+    border-radius: 10px;
+    
+}
+
+.kotak-sub-head-2:hover{
+    background: #F2F2FD;
+    color: #9091DD;
+}
+
+@media screen and (max-width: 768px) {
+   .container-sub-head{
+    display: grid;
+    justify-content: space-evenly;
+   }
+  }
