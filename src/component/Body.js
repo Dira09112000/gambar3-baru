@@ -7,6 +7,7 @@ import { MdExpandMore } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
 import { FiMoreHorizontal } from "react-icons/fi";
 import MarketCap from "./MarketCap";
+import PortGraph from "./Portofolio";
 const Body = () => {
   return (
     <>
@@ -191,9 +192,7 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-                <div style={{ padding: "20px" }}>
-                  
-                </div>
+                <div><PortGraph/></div>
               </div>
             </div>
             {/* sesi2 */}
@@ -270,7 +269,7 @@ const Body = () => {
                   <FiMoreHorizontal />
                 </div>
               </div>
-              <div style={{paddingTop:"20px"}}></div>
+              <div style={{ paddingTop: "20px" }}></div>
               <div>
                 <MarketCap />
               </div>
