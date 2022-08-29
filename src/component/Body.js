@@ -5,9 +5,15 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { MdExpandMore } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
-import { FiMoreHorizontal } from "react-icons/fi";
+import { TbBallVolleyball } from "react-icons/tb";
+import {
+  FiMoreHorizontal,
+  FiArrowUpRight,
+  FiArrowDownRight,
+} from "react-icons/fi";
 import MarketCap from "./MarketCap";
 import PortGraph from "./Portofolio";
+
 const Body = () => {
   return (
     <>
@@ -69,7 +75,12 @@ const Body = () => {
             {/* Bitcoin */}
             <div className="card1" style={{ display: "flex" }}>
               <div className="bitcoin">
-                <text>Bitcoin</text>
+                <div style={{ display: "flex" }}>
+                  <text style={{ paddingLeft: "15px" }}>Bitcoin</text>
+                  <div className="panah">
+                    <FiArrowUpRight />
+                  </div>
+                </div>
                 <div className="text-dolar">
                   <text>$1.453</text>
                 </div>
@@ -82,7 +93,12 @@ const Body = () => {
             {/* Ethereum */}
             <div className="card1" style={{ display: "flex" }}>
               <div className="bitcoin">
-                <text>Ethereum</text>
+                <div style={{ display: "flex" }}>
+                  <text style={{ paddingLeft: "15px" }}>Ethereum</text>
+                  <div className="panah-bawah">
+                    <FiArrowDownRight />
+                  </div>
+                </div>
                 <div className="text-dolar">
                   <text>$1.700</text>
                 </div>
@@ -95,7 +111,12 @@ const Body = () => {
             {/* Ripple */}
             <div className="card1" style={{ display: "flex" }}>
               <div className="bitcoin">
-                <text>Ripple</text>
+                <div style={{ display: "flex" }}>
+                  <text style={{ paddingLeft: "15px" }}>Ripple</text>
+                  <div className="panah">
+                    <FiArrowUpRight />
+                  </div>
+                </div>
                 <div className="text-dolar">
                   <text>$0.586</text>
                 </div>
@@ -108,7 +129,12 @@ const Body = () => {
             {/* Devcoin */}
             <div className="card1" style={{ display: "flex" }}>
               <div className="bitcoin">
-                <text>Devcoin</text>
+                <div style={{ display: "flex" }}>
+                  <text style={{ paddingLeft: "15px" }}>Devcoin</text>
+                  <div className="panah-bawah">
+                    <FiArrowDownRight />
+                  </div>
+                </div>
                 <div className="text-dolar">
                   <text>$0.021</text>
                 </div>
@@ -145,7 +171,7 @@ const Body = () => {
                   padding: "20px",
                   background: "#29263C",
                   width: "730px",
-                  height: "435px",
+                  height: "56vh",
                   borderRadius: "20px",
                 }}
               >
@@ -192,7 +218,7 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-                <div><PortGraph/></div>
+                <PortGraph/>
               </div>
             </div>
             {/* sesi2 */}
@@ -215,7 +241,7 @@ const Body = () => {
                     display: "flex",
                     background: "#29263C",
                     width: "100%",
-                    height: "230px",
+                    height: "200px",
                     borderRadius: "20px",
                   }}
                 >
@@ -243,6 +269,9 @@ const Body = () => {
 
                   <div style={{ paddingTop: "17px", paddingLeft: "10px" }}>
                     <div className="card-hijau">
+                      <div className="bola">
+                        <TbBallVolleyball color="white" />
+                      </div>
                       <div className="text-balance">
                         <text>Balance</text>
                       </div>
@@ -269,9 +298,17 @@ const Body = () => {
                   <FiMoreHorizontal />
                 </div>
               </div>
-              <div style={{ paddingTop: "20px" }}></div>
-              <div>
-                <MarketCap />
+              <div style={{ paddingTop: "20px" }}>
+                <div
+                  style={{
+                    background: "#29263C",
+                    width: "100%",
+                    height: "100px",
+                    borderRadius: "20px",
+                  }}
+                >
+                  <MarketCap />
+                </div>
               </div>
             </div>
           </div>

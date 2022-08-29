@@ -26,7 +26,7 @@ const Grafik = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: "top",
+        display:false
       },
       title: {
         display: false,
@@ -35,16 +35,17 @@ const Grafik = () => {
     },
   };
 
-  const labels = ["", "", "", "", "", "",];
+  const labels = ["", "", "", "", "", "","","",""];
 
   const data = {
     labels,
     datasets: [
       {
+        pointRadius:0,
         label: "",
-        data: ["8", "1.", "7", "4", "9"],
+        data: ["48", "1", "30", "2", "48","3","35","4","30"],
         borderColor: "#F2F2F2",
-        fill: true,
+        fill: false,
         backgroundColor: "#F2F2F2",
       },
     ],
@@ -52,10 +53,10 @@ const Grafik = () => {
 
   return (
 
-        <div style={{width:'190px',
-                    height:'100px',
-                    paddingTop:'20px',
-                    paddingLeft:'85px'}}>
+        <div style={{width:'100%',
+                    // height:'200px',
+                    paddingTop:'30px',
+                    paddingLeft:'95px'}}>
           <Line options={options} data={data} />
         </div>
 
