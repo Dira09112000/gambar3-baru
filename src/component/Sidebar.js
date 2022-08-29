@@ -55,7 +55,7 @@ const Sidebar = () => {
               <MenuItem icon={<IoNewspaper />}>
               <div className="row">
                 <div className="col-4">News</div>
-                <div className="col-8 mar">Upadate!</div>
+                <div className="col-8 mar">Update!</div>
               </div>
               </MenuItem>
               <MenuItem icon={<AiTwotoneSetting />}>Settings</MenuItem>
@@ -65,10 +65,8 @@ const Sidebar = () => {
                 {menuCollapse ? (
                   <></>
                 ) : (
-                  <Card className='background'>
+                  <Card style={{paddingTop:"120px"}} className='background'>
                     <div className="container-fluid">
-                        <img
-                        src="https://o.remove.bg/downloads/4ce5890a-7c30-4f68-8190-8429df2737c8/images-removebg-preview.png" />
                         <div className="text-center">
                                       <Card.Title className='font-card'>
                                         Newest Version are <br/> Available!!

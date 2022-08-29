@@ -53,7 +53,7 @@ const Grafik = () => {
 
   return (
 
-        <div style={{width:'100%',
+        <div style={{width:'200px',
                     // height:'200px',
                     paddingTop:'30px',
                     paddingLeft:'95px'}}>
